@@ -1,0 +1,32 @@
+- banner:
+  - navigation:
+    - list:
+      - listitem:
+        - link "Catalog":
+          - /url: /
+      - listitem:
+        - link "Rent-A-Cat":
+          - /url: /rent-a-cat
+      - listitem:
+        - link "Feed-A-Cat":
+          - /url: /feed-a-cat
+      - listitem:
+        - link "Greet-A-Cat":
+          - /url: /greet-a-cat
+      - listitem:
+        - link "Reset":
+          - /url: /reset
+- main:
+  - heading "Cats available for rent:" [level=4]
+  - list "Cat names":
+    - listitem: ID 1. Jennyanydots
+    - listitem: ID 2. Old Deuteronomy
+    - listitem: ID 3. Mistoffelees
+  - list "Cat photos":
+    - listitem:
+      - img "Jennyanydots"
+    - listitem:
+      - img "Old Deuteronomy"
+    - listitem:
+      - img "Mistoffelees"
+  - paragraph: Used for CS1632 Software Quality Assurance, taught by Wonsun Ahn
