@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.HtmlUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -154,7 +155,7 @@ public class GreetingController {
 
 		// Unsanitized user input embedded directly into HTML
 		content += "<div class=\"row\">\n";
-		content += "<h4>Search results for: " + keyword + "</h4>\n";
+		content += "<h4>Search results for: " + HtmlUtils.htmlEscape(keyword) + "</h4>\n";
 		content += "</div>\n";
 		content += "<p>No cats found matching your query.</p>\n";
 
