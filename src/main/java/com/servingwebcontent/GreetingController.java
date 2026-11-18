@@ -155,7 +155,7 @@ public class GreetingController {
 
 		// Unsanitized user input embedded directly into HTML
 		content += "<div class=\"row\">\n";
-		content += "<h4>Search results for: " + HtmlUtils.htmlEscape(keyword) + "</h4>\n";
+		content += "<h4>Search results for: " + keyword + "</h4>\n";
 		content += "</div>\n";
 		content += "<p>No cats found matching your query.</p>\n";
 
